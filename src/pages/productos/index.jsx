@@ -174,6 +174,7 @@ const Products = () => {
   }
 
   const handleAlta = () => {
+    localStorage.setItem("addProductCallbackTo", "productos");
     navigate("/productos/alta");
   };
 

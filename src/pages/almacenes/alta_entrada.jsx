@@ -304,6 +304,12 @@ const AlmacenEntradaAlta = () => {
                   isSearchable={true}
               ></Select>
 
+                <button onClick={() => 
+                {
+                  localStorage.setItem("addProductCallbackTo", "almacen");
+                  navigate("/productos/alta")
+                } } type="button" className="btn btn-success text-center">Nuevo Producto</button>
+
               {/*Talla*/}
               <label  className="block capitalize form-label  ">Talla *</label>
               <Select
